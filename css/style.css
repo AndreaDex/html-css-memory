@@ -1,0 +1,22 @@
+/* Common style */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Fredoka One', cursive;
+    background-color: rgba(173, 216, 230, 1);
+}
+
+/* Header style */
+header{
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+}
