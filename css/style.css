@@ -10,6 +10,23 @@ body{
     background-color: rgba(173, 216, 230, 1);
 }
 
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    height: 250px;
+    width: 230px;
+}
+
+.card:hover .overlay{
+    display: none;
+}
+
 /* Header style */
 header{
     text-align: center;
@@ -19,4 +36,65 @@ header{
 h1{
     font-size: 50px;
     color: white;
+}
+
+/* main Style */
+.playground{
+    width: 68%;
+    margin: auto;
+}
+
+.card{
+    position: relative;
+    margin: 20px 10px;
+    height: 250px;
+    width: calc(100% / 4 -20px );
+    float: left;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+img{
+    width: 230px;
+    height: 200px
+}
+
+
+.ol_pattern{
+    height: 250px;
+    width: 230px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.baloon_tx{
+    color: fuchsia;
+}
+
+.bicycle_tx{
+    color: lime;
+}
+
+.ship_tx{
+    color: blue;
+}
+
+.submarine_tx{
+    color: yellow;
+}
+
+.tractor_tx{
+    color: orange;
+}
+
+.tram_tx{
+    color: crimson;
+}
+
+/* Footer style */
+
+footer{
+    text-align: center;
+    margin-top: 20px;
 }
